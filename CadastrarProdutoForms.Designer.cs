@@ -1,4 +1,5 @@
-﻿namespace Trabalho_Alex
+﻿
+namespace Trabalho_Alex
 {
     partial class CadastrarProdutoForms
     {
@@ -33,9 +34,9 @@
             label3 = new Label();
             label4 = new Label();
             Salvar = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            textoNome = new TextBox();
+            textoPreco = new TextBox();
+            textoQuantidade = new TextBox();
             Voltar = new Button();
             SuspendLayout();
             // 
@@ -58,6 +59,7 @@
             label2.Size = new Size(90, 37);
             label2.TabIndex = 1;
             label2.Text = "Nome";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -87,27 +89,31 @@
             Salvar.TabIndex = 4;
             Salvar.Text = "Salvar";
             Salvar.UseVisualStyleBackColor = true;
+            Salvar.Click += Salvar_Click;
             // 
-            // textBox1
+            // textoNome
             // 
-            textBox1.Location = new Point(249, 137);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(236, 23);
-            textBox1.TabIndex = 5;
+            textoNome.Location = new Point(249, 137);
+            textoNome.Name = "textoNome";
+            textoNome.Size = new Size(236, 23);
+            textoNome.TabIndex = 5;
+            textoNome.TextChanged += textoNome_TextChanged;
             // 
-            // textBox2
+            // textoPreco
             // 
-            textBox2.Location = new Point(249, 224);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(236, 23);
-            textBox2.TabIndex = 6;
+            textoPreco.Location = new Point(249, 224);
+            textoPreco.Name = "textoPreco";
+            textoPreco.Size = new Size(236, 23);
+            textoPreco.TabIndex = 6;
+            textoPreco.TextChanged += textBox2_TextChanged;
             // 
-            // textBox3
+            // textoQuantidade
             // 
-            textBox3.Location = new Point(249, 313);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(236, 23);
-            textBox3.TabIndex = 7;
+            textoQuantidade.Location = new Point(249, 313);
+            textoQuantidade.Name = "textoQuantidade";
+            textoQuantidade.Size = new Size(236, 23);
+            textoQuantidade.TabIndex = 7;
+            textoQuantidade.TextChanged += textoQuantidade_TextChanged;
             // 
             // Voltar
             // 
@@ -125,9 +131,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(Voltar);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(textoQuantidade);
+            Controls.Add(textoPreco);
+            Controls.Add(textoNome);
             Controls.Add(Salvar);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -139,6 +145,11 @@
             PerformLayout();
         }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
         #endregion
 
         private Label label1;
@@ -146,9 +157,9 @@
         private Label label3;
         private Label label4;
         private Button Salvar;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox textoNome;
+        private TextBox textoPreco;
+        private TextBox textoQuantidade;
         private Button Voltar;
     }
 }
