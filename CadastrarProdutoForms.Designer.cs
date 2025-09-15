@@ -49,6 +49,7 @@ namespace Trabalho_Alex
             label1.Size = new Size(315, 54);
             label1.TabIndex = 0;
             label1.Text = "Tela de Cadastro";
+            label1.Click += label1_Click;
             // 
             // label2
             // 

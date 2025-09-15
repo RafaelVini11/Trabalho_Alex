@@ -67,9 +67,10 @@ namespace Trabalho_Alex
                 textoQuantidade.Clear();
 
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show("Erro ao salvar" + ex.Message);
-                
+
             }
         }
 
@@ -79,6 +80,11 @@ namespace Trabalho_Alex
         }
 
         private void textoQuantidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

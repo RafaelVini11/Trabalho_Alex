@@ -14,7 +14,8 @@ namespace Trabalho_Alex
 
         private void VerProdutos_Click(object sender, EventArgs e)
         {
-
+            verEstoque telaEstoque = new verEstoque();
+            telaEstoque.ShowDialog();
         }
 
         private void Cadastrar_Click(object sender, EventArgs e)
