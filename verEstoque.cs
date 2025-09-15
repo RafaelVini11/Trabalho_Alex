@@ -142,7 +142,7 @@ namespace Trabalho_Alex
                     ExcluirProduto(id);
                 }
                 else {
-                    MessageBox.Show("OK");
+                    MessageBox.Show("OKbl");
                 }
 
             }
