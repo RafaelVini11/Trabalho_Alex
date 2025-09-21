@@ -14,13 +14,14 @@ namespace Trabalho_Alex
 
         private void VerProdutos_Click(object sender, EventArgs e)
         {
+            this.Hide();
             verEstoque telaEstoque = new verEstoque();
             telaEstoque.ShowDialog();
         }
 
         private void Cadastrar_Click(object sender, EventArgs e)
         {
-           
+            this.Hide();
             CadastrarProdutoForms telaCadastro = new CadastrarProdutoForms();
             telaCadastro.ShowDialog();
            
